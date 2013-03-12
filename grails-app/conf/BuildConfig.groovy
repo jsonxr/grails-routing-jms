@@ -3,6 +3,8 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 grails.plugin.location.routing = '../grails-routing'
 
+def camelVersion = '2.10.4'
+
 grails.project.dependency.resolution = {
 	// inherit Grails' default dependencies
 	inherits("global") {
@@ -26,7 +28,7 @@ grails.project.dependency.resolution = {
 		runtime('org.apache.activemq:activemq-core:5.7.0')
 		runtime('org.apache.activemq:activemq-camel:5.7.0')
 		runtime('org.apache.activemq:activemq-pool:5.7.0')
-		runtime('org.apache.camel:camel-jms:2.10.4') {
+		runtime("org.apache.camel:camel-jms:${camelVersion}") {
 			 excludes 'spring-aop', 'spring-beans', 'spring-core', 'spring-expression', 'spring-asm', 'spring-tx', 'spring-context'
 		}
 	}

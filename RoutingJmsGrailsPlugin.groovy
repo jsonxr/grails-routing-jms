@@ -1,6 +1,6 @@
 class RoutingJmsGrailsPlugin {
 	def version        = '1.2.0'
-	def grailsVersion  = '2.0.0 > *'
+	def grailsVersion  = '2.2.0 > *'
 	def author         = 'Matthias Hryniszak'
 	def authorEmail    = 'padcom@gmail.com'
 	def title          = 'JMS integration for the grails-routing plugin'
