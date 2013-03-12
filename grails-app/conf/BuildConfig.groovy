@@ -1,6 +1,7 @@
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
+grails.plugin.location.routing = '../grails-routing'
 
 grails.project.dependency.resolution = {
 	// inherit Grails' default dependencies
@@ -22,10 +23,10 @@ grails.project.dependency.resolution = {
 
 	dependencies {
 		runtime('commons-logging:commons-logging:1.1.1')
-		runtime('org.apache.activemq:activemq-core:5.5.1')
-		runtime('org.apache.activemq:activemq-camel:5.5.1')
-		runtime('org.apache.activemq:activemq-pool:5.5.1')
-		runtime('org.apache.camel:camel-jms:2.9.0') {
+		runtime('org.apache.activemq:activemq-core:5.7.0')
+		runtime('org.apache.activemq:activemq-camel:5.7.0')
+		runtime('org.apache.activemq:activemq-pool:5.7.0')
+		runtime('org.apache.camel:camel-jms:2.10.4') {
 			 excludes 'spring-aop', 'spring-beans', 'spring-core', 'spring-expression', 'spring-asm', 'spring-tx', 'spring-context'
 		}
 	}
@@ -35,6 +36,5 @@ grails.project.dependency.resolution = {
             excludes "svn"
 			export = false 
 		}
-		compile(":routing:1.2.0")
 	}
 }
